@@ -1,0 +1,36 @@
+style {
+    text-align: center; /*making all of the text go into the center of the page. My own preference*/
+}
+
+color-example {
+   color : orange; 
+   background-color: #204843; 
+   font-family: "Arial", sans-serif; 
+   border: 3px solid black;
+ }
+
+ header-example {
+   text-align: center; margin-top: 50px;
+   font-size: 30px;
+   font-family: "Helvetica", sans-serif;
+   color: brown;
+ }
+
+ list-example {
+   list-style-type: square;
+   list-style-position: center; /*Change Bullet point style*/
+   color: red; /*Change text color*/
+ }
+
+ text-example {
+    font-family: "Monaco", monospace; /*Change Font-family to a different font of your choice*/
+    font-size: 20px/*Adjust the font size to make the text larger*/
+    text-transform: capitalize; /*Apply text-transfromt to capitalize the text*/
+    text-decoration: underline; /*Add text-decoration to underline the text*/
+ }
+
+ div-example {
+    background-color: #204843; /*Change the background color and border of the div*/
+    border: 3px solid orange;
+    color: salmon;
+ }
