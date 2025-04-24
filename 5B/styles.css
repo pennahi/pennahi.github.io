@@ -1,0 +1,128 @@
+body {
+  text-align: center;       /*My own preference to center all of the text*/
+  background-color: lightblue; /*Added for the task 4B*/
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background: #e1d2e6;
+  font-size: 20px;
+}
+
+section {
+  float: left;
+  padding: 40px;
+  width: 94%;
+  margin-bottom: 30px;
+  background-color: #c0eb71;
+}
+
+article {
+  float: left;
+  padding: 40px;
+  width: 94%;
+  margin-bottom: 30px;
+  background-color: #6ff1eb;
+}
+
+footer {
+background-color: #bec4c4;
+padding: 40px;
+text-align: center;
+color: black;
+width: 94%;
+}
+
+.color-example {
+   color : orange; 
+   background-color: #241965; 
+   font-family:"Arial", sans-serif; 
+   border: 3px solid black;
+ }
+
+ .color-second {
+  color: #241965;
+  background-color: palevioletred;
+  border: 3px solid #241965;
+  padding: 15px 25px;
+  border-radius: 15px;
+  text-align:center; margin-top: 30px;
+  font-size: 20px;
+  font-family:"Monaco", monospace;
+ }
+
+ .header-example {
+   text-align:center; margin-top: 50px;
+   font-size: 40px;
+   font-family:"Helvetica", sans-serif;
+   color: brown;
+ }
+
+ .header-second {
+  border: 6px solid #241965;
+  padding: 15px 25px;
+  text-align:center; margin-top: 60px;
+  font-size: 50px;
+  font-family:"Monaco", monospace;
+  color: palevioletred;
+  }
+
+  .header-two {
+    text-align:center; 
+    font-size: 30px;
+    font-family:"Monaco", monospace;
+    color: palevioletred;
+  }
+
+  .header-three {
+    text-align:center; 
+    font-size: 30px;
+    font-family:"Monaco", monospace;
+    color: palevioletred;
+  }
+
+  .header-four {
+    text-align:center; 
+    font-size: 20px;
+    font-family:"Monaco", monospace;
+    color: palevioletred;
+  }
+
+ .list-example {
+   list-style-type: square;
+   list-style-position: inside; 
+   color: rgb(204, 49, 101); 
+ }
+
+ .text-example {
+    font-family:"Monaco", monospace; 
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: underline; 
+ }
+
+ .div-example {
+    background-color: #241965;
+    border: 3px solid orange;
+    color: salmon;
+    padding: 15px 25px;
+    border-radius: 12px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+
+ figcaption {
+  font-family:"Monaco", monospace;
+  font-size:15px;
+  font-weight: bold;
+  color: #241965;
+ }
+
+ .clearfix::after {
+  content:"";
+  display: block;
+  clear: both;
+ }
