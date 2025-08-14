@@ -395,8 +395,36 @@ $(document).ready(function(){
 })
 </script>
 
+<script>
+$(document).ready(function () {
+  var $navMenu = $('#myNavbar');
+  var $hamburger = $('.navbar-toggle');
+
+  // Click outside to close
+  $(document).on('click', function (e) {
+    var target = $(e.target);
+    if (
+      $navMenu.hasClass('in') &&
+      !target.closest('#myNavbar').length &&
+      !target.closest('.navbar-toggle').length
+    ) {
+      $navMenu.collapse('hide');
+    }
+  });
+
+  // Close on scroll
+  var lastScrollY = $(window).scrollTop();
+  $(window).on('scroll', function () {
+    if ($navMenu.hasClass('in') && Math.abs($(this).scrollTop() - lastScrollY) > 70) {
+      $navMenu.collapse('hide');
+    }
+  });
+});
+</script>
+
 </body>
 </html>
+
 
 
 
