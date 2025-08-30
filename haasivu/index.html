@@ -38,12 +38,12 @@
     padding: 150px 25px;
     font-family: Montserrat, sans-serif;
   }
-  #info {
-    max-width: 900px;
-    margin: 0 auto;
+  #info, #timetable, #food, #good-to-know, #gifts, #photos, #contact{
+    max-width: 1500px;
+    margin: 30px auto;
   }
   .container-fluid {
-    padding: 60px 50px;
+    padding: 50px 50px;
   }
   .bg-grey {
     background-color: #02372d31;
@@ -58,6 +58,7 @@
   .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #02372D;
+    top: 50%;
   }
   .carousel-indicators li {
     border-color: #02372D;
@@ -113,6 +114,7 @@
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    margin: 20px 50px;
   }
 
   .map-responsive iframe {
@@ -136,6 +138,7 @@
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
+
   @keyframes slide {
     0% {
       opacity: 0;
@@ -182,6 +185,10 @@
       margin-top: 10px;
     }
   }
+  [id] {
+    padding-top: 120px;
+    margin-top: -120px;
+  }
   </style>
 </head>
 <body id="haaPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -222,7 +229,7 @@
         
         <h2>Saapumisohjeet</h2><br>
         
-        <p><br>Paikalle kannattaa tulla julkisilla kulkuvälineillä, kuten ratikalla 7T, mutta oman auton voi jättää katuparkkiin esimerkiksi Pohjoisrantaan.</p><br>
+        <p><br>Paikalle kannattaa tulla julkisilla kulkuvälineillä, kuten ratikalla 7T, mutta oman auton voi jättää katuparkkiin esimerkiksi Pohjoisrantaan, tai lähistöllä oleviin parkkihalleihin kuten Europark Kluuviin.</p><br>
 
         <div class="map-responsive">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.7144930298336!2d24.95669517747313!3d60.16890524353575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920b4f32be7b43%3A0x432a7b29555bb3b7!2sRavintola%20Sipuli!5e0!3m2!1sfi!2sfi!4v1747216547881!5m2!1sfi!2sfi" 
@@ -232,33 +239,31 @@
                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe> 
           </div>
-          <p><br>Saavuthan paikalle Ravintola Sipulin Bankettisaliin klo 16 (Kanavaranta 7, 00160 Helsinki). </p><br>
+          <p><br>Saavuthan paikalle Ravintola Sipulin Bankettisaliin klo 16 (Kanavaranta 7, 00160 Helsinki). </p>
+          <p>Siunaaminen tapahtuu Ravintola Sipulin tiloissa juhlan alussa ja juhlat jatkuvat puoleen yöhön saakka!</p><br>
      </div>
   </div>
 </div>
 
 <!-- Container (Timetable) -->
 <div id="timetable" class="container-fluid text-center bg-grey" >
-<div class="container-fluid">
   <div class="row">
     <div class="col-sm-2">
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
     </div>
     <div class="col-sm-8">
       <br><p><strong>Bankettisali</strong> sijaitsee kolmannessa kerroksessa rappusista oikealle. Hissillä pääsee kolmanteen kerrokseen, mutta itse saliin täytyy mennä noin kolme porrasaskelmaa alaspäin, joten tila ei ole täysin esteetön.</p>
-      <br><p><strong>Vessat</strong> sijaitsevat ensimmäisessä ja toisessa kerroksessa</p>
+      <br><p><strong>Vessat</strong> sijaitsevat ensimmäisessä ja toisessa kerroksessa.</p>
+      <br><p><strong>Tupakointi</strong> on mahdollista vain ulkona.</p>
     </div>
   </div>
-</div>
 </div>
 
 <!-- Container (Food) -->
 <div id="food" class="container-fluid text-center">
   <h2>RUOKA & JUOMAT</h2>
-        <div class="container fluid text-center">
-          <p>Ruoka tulee olemaan buffet-tarjoiluna ja se kattaa kolme ruokalajia.<br>Jos teillä on mitään erityisruokavalioita, joista tahtoisitte ravintola Sipulin henkilökunnan tietävän, kerrottehan siitä meille ilmoittautumisesi yhteydessä!</p>
-         <p>Tämä on ravintolatila, jossa on baaritarjoilu, joten jätäthän omat juomat kotiin!<br>Alkoholittomat tuotteet on myös mietittyjä</p>
-        </div>
+          <p>Ruoka tulee olemaan buffet-tarjoiluna ja se kattaa kolme ruokalajia. Jos teillä on mitään erityisruokavalioita, <br>joista tahtoisitte ravintola Sipulin henkilökunnan tietävän, kerrottehan siitä meille ilmoittautumisesi yhteydessä!</p>
+         <p>Tämä on ravintolatila, jossa on baaritarjoilu, joten jätäthän omat juomat kotiin!<br>Alkoholittomat tuotteet on myös otettu huomioon tarjonnassa.</p>
     <div class="text-center" style="padding-top: 50px;">
       <span class="glyphicon glyphicon-glass logo slideanim"></span>
     </div>
@@ -270,8 +275,7 @@
   <h2>YLEISTÄ</h2><br>
   <p><strong>Pukukoodi:</strong> Puku<p>
   <br><p><strong>Avainhenkilöiden yhteystiedot</strong> morsiusneito Mimmi (044-3401875) sekä bestman Eppu (044-5277676) <br> vastaavat tarvittaessa viesteihin tai puheluihin päivän aikana. </p>
-  <br><p><strong>Lapset</strong> Toivomme, että pystymme viettämään päiväämme ilman lapsia, jotta teilläkin on mahdollisuus nauttia illasta täysin siemauksin!</p>
-  <br><p><strong>RSVP</strong> Kerrothan oletko osallistumassa häihimme ilmoittamalla Hilpalle tai Ahdille suoraan, viimeistään 31.1.2026! Muistathan ilmoittaa samalla erityisruokavaliosi!</p>
+  <br><p><strong>RSVP</strong> Kerrothan oletko osallistumassa häihimme ilmoittamalla Hilpalle tai Ahdille suoraan (yhteystiedot alla), viimeistään 31.1.2026! Muistathan ilmoittaa samalla erityisruokavaliosi!</p>
 
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -279,18 +283,26 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>TAXI HELSINKI<br><span>0100 0700</span></h4>
+        <h4>RAVINTOLA SIPULI<br><span>+358 9 6128 5500, Kanavaranta 7</span></h4>
+      </div>
+      <div class="item">
+       <h4>TAXI HELSINKI<br><span>0100 0700</span></h4>
       </div>
       <div class="item">
         <h4>HÄTÄNUMERO<br><span>112</span></h4>
       </div>
       <div class="item">
-        <h4>RAVINTOLA SIPULI<br><span>+358 9 6128 5500, Kanavaranta 7</span></h4>
+        <h4>MYRKYTYSTIETOKESKUS<br><span>0800 147 111</span></h4>
+      </div>
+      <div class="item">
+        <h4>LÖYTÖTAVARAT, POLIISI<br><span>Pasilanraitio 13, 00240 Helsinki</span></h4>
       </div>
     </div>
 
@@ -307,31 +319,29 @@
 </div>
 
 <!-- Container (Gifts Section) -->
-<div id="gifts" class="container-fluid">
-  <div class="text-center">
+<div id="gifts" class="container-fluid text-center">
     <h2>LAHJAT</h2>
-    <p>Olemme onnekkaita ja kotimme on jo täynnä tavaraa ja naurua, joten toivomme häälahjaksi eniten rahaa häämatkaamme varten! Häätili on FI81 5358 0620 6248 63, mutta mobilepay morsiusparin puhelinnumeroihin johtaa myös oikeaan paikkaan.</p>
+    <p>Olemme onnekkaita, että kotimme on jo täynnä tarpeellista (ja tarpeetonta) tavaraa, joten toivomme häälahjaksi eniten rahaa häämatkaamme varten! <br>Häätili on FI81 5358 0620 6248 63, mutta mobilepay morsiusparin puhelinnumeroihin johtaa myös oikeaan paikkaan.</p>
     <br>
-    <p>Jos kuitenkin tahdotte antaa fyysisemmän tai tarkemman lahjan, lahjalistamme löytyy osoitteesta https://lahjalista.net/hilppa-ja-ahti</p>
-  </div>
+    <p>Jos kuitenkin tahdotte antaa fyysisemmän tai tarkemman lahjan, lahjalistamme löytyy <a href="https://lahjalista.net/hilppa-ja-ahti">täältä</a>.</p>
        
   
-  <div class="row text-center slideanim">
+  <div id="photos" class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail bg-taikina">
-        <img src="vesiputous.png" alt="A laughing couple under a waterstream" width="550" height="400">
+        <img src="vesiputous.png" alt="Ronaldon pallit on kultaista pronssia!" width="550" height="400">
         <p>Me toivomme</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail bg-taikina">
-        <img src="tallinnassa.png" alt="A smiling couple under strip lights in Tallinn" width="550" height="400">
+        <img src="tallinnassa.png" alt="Teretulemast Tallinn!" width="550" height="400">
         <p>että osallistutte</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail bg-taikina">
-        <img src="norjassa.jpg" alt="A smiling couple on a hike" width="550" height="400">
+        <img src="norjassa.jpg" alt="Soitto Norjaan, mis mun lampaat on?" width="550" height="400">
         <p>meidän tärkeään päiväämme!</p>
       </div>
     </div>
@@ -343,7 +353,8 @@
   <h2 class="text-center">YHTEYSTIEDOT</h2>
   <div class="row">
     <div class="col-sm-12 text-center">
-      <p>Jos teillä on vielä kysymyksiä, olkaa yhteydessä meihin!</p> <br>
+      <p>Jos teillä on vielä kysymyksiä, olkaa yhteydessä meihin!</p>
+      <p>Parhaiten meidät tavoittaa viestillä.</p> <br>
       <p><span class="glyphicon glyphicon-phone"></span> Hilppa (040 0359162) ja Ahti (045 6796549)</p>
       <p><span class="glyphicon glyphicon-envelope"></span> hilpanjaahdinhaat@gmail.com</p>
     </div>
@@ -359,23 +370,22 @@
 
 <script>
 $(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
+
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
+ 
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
+
       event.preventDefault();
 
-      // Store hash
+
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
+
         window.location.hash = hash;
       });
     } // End if
@@ -399,7 +409,6 @@ $(document).ready(function () {
   var $navMenu = $('#myNavbar');
   var $hamburger = $('.navbar-toggle');
 
-  // Click outside to close
   $(document).on('click', function (e) {
     var target = $(e.target);
     if (
@@ -411,7 +420,6 @@ $(document).ready(function () {
     }
   });
 
-  // Close on scroll
   var lastScrollY = $(window).scrollTop();
   $(window).on('scroll', function () {
     if ($navMenu.hasClass('in') && Math.abs($(this).scrollTop() - lastScrollY) > 70) {
@@ -423,10 +431,3 @@ $(document).ready(function () {
 
 </body>
 </html>
-
-
-
-
-
-
-
